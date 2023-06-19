@@ -113,7 +113,7 @@ void gpio_set_driver_strength(enum gpio_port n, unsigned int pins, int ds)
 int gpio_request(unsigned gpio, const char *label)
 {
 	printf("%s[%s] = %d\n",__func__,label,gpio);
-	return gpio;
+	return 0;
 }
 
 int gpio_free(unsigned gpio)

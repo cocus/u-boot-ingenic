@@ -118,6 +118,10 @@ int board_eth_init(bd_t *bis)
 		// Wyze V3
 		gpio_request(48,"wyze_mmc_enable");
 		gpio_direction_output(48,0);
+		// Wyze cam pan v3
+		gpio_request(39,"wyze_pan_mmc_enable");
+		gpio_direction_output(39,0);
+
 		if(!getenv("extras"))
 			setenv("extras", "nogmac");
 	}
